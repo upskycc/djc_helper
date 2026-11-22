@@ -792,8 +792,8 @@ def filter_unused_params_catch_exception(urlRendered: str) -> str:
 def run_from_src() -> bool:
     exe_path = sys.argv[0]
     _, filename = os.path.dirname(exe_path), os.path.basename(exe_path)
-
-    return filename.endswith(".py") or filename == "pytest"
+    return True
+    # return filename.endswith(".py") or filename == "pytest"
 
 
 def get_uuid() -> str:
